@@ -15,14 +15,11 @@
     "NACHA ACH Transaction"
   ],
   "contributors": [
-    {
-      "name": "Pradeep Vishwakarma",
-      "email": "pradeepvish1213@gmail.com"
-    }
+    "Pradeep Vishwakarma <pradeepvish1213@gmail.com>"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/pradeepvish1213/sp-nacha.git"
+    "url": "git+https://github.com/pradeepvish1213/sp-nacha.git"
   },
   "engines": {
     "node": ">= 0.10.0"
@@ -33,10 +30,22 @@
   "dependencies": {
     "async": "^3.2.4",
     "lodash": "^4.17.21",
-    "moment": "^2.29.4"
+    "moment": "^2.29.4",
+    "typescript": "^5.4.2"
   },
   "devDependencies": {
-    "mocha": "latest",
-    "chai": "latest"
-  }
+    "chai": "latest",
+    "mocha": "latest"
+  },
+  "bugs": {
+    "url": "https://github.com/pradeepvish1213/sp-nacha/issues"
+  },
+  "homepage": "https://github.com/pradeepvish1213/sp-nacha#readme",
+  "main": "dist/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
 }
