@@ -1,4 +1,7 @@
-module.exports = {
+import { Field } from "../types";
+
+const control = () => ({
+
 	recordTypeCode: {
 		name: 'Record Type Code',
 		width: 1,
@@ -12,6 +15,7 @@ module.exports = {
 		width: 6,
 		position: 2,
 		type: 'numeric',
+		number: true,
 		value: 0
 	},
 
@@ -20,6 +24,7 @@ module.exports = {
 		width: 6,
 		position: 3,
 		type: 'numeric',
+		number: true,
 		value: 0
 	},
 
@@ -28,6 +33,7 @@ module.exports = {
 		width: 8,
 		position: 4,
 		type: 'numeric',
+		number: true,
 		value: 0
 	},
 
@@ -36,7 +42,7 @@ module.exports = {
 		width: 10,
 		position: 5,
 		type: 'numeric',
-		value: 0
+		value: '0'
 	},
 
 	totalDebit: {
@@ -64,5 +70,7 @@ module.exports = {
 		type: 'alphanumeric',
 		blank: true,
 		value: ''
-	}
-};
+	},
+
+}) as const satisfies Record<string, Field>;
+export default control;

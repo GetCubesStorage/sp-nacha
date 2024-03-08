@@ -1,4 +1,4 @@
-module.exports.File = require('./lib/file');
+module.exports.File = require('./lib/file').default;
 module.exports.Entry = require('./lib/entry');
 module.exports.Batch = require('./lib/batch');
 module.exports.BatchIAT = require('./lib/batch-iat');
