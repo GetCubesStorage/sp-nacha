@@ -1,4 +1,6 @@
-module.exports = {
+import {Field} from '../types';
+
+const fields = () => ({
 	recordTypeCode: {
 		name: 'Record Type Code',
 		width: 1,
@@ -13,9 +15,10 @@ module.exports = {
 		width: 2,
 		position: 2,
 		required: true,
-		type: 'numeric'
+		type: 'alphanumeric',
+		value: '',
 	},
-    
+
 	receivingDFI: {
 		name: 'Receiving DFI Identification',
 		width: 8,
@@ -49,7 +52,7 @@ module.exports = {
 		position: 6,
 		required: true,
 		type: 'numeric',
-		value:'',
+		value: 0,
 		number: true
 	},
 
@@ -98,4 +101,5 @@ module.exports = {
 		blank: true,
 		value: ''
 	}
-};
+}) as const satisfies Record<string, Field>;
+export default fields;
