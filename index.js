@@ -1,5 +1,5 @@
 module.exports.File = require('./lib/file').default;
-module.exports.Entry = require('./lib/entry');
+module.exports.Entry = require('./lib/entry').default;
 module.exports.Batch = require('./lib/batch');
 module.exports.BatchIAT = require('./lib/batch-iat');
 module.exports.EntryIAT = require('./lib/entry-iat');
