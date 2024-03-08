@@ -7,7 +7,7 @@ import validate from './../validate';
 import fields from "./fields";
 import EntryAddenda from '../entry-addenda';
 import { NumberField, StringField } from '../types';
-const highLevelOverrides = ['transactionCode', 'receivingDFI', 'checkDigit', 'DFIAccount', 'amount', 'idNumber', 'individualName', 'discretionaryData', 'addendaId', 'traceNumber'];
+const highLevelOverrides = ['transactionCode', 'receivingDFI', 'DFIAccount', 'amount', 'idNumber', 'individualName', 'discretionaryData', 'addendaId', 'traceNumber'];
 type highLevelOverrides = typeof highLevelOverrides[number];
 // type Header = { [K in keyof ReturnType<typeof header>]: ReturnType<typeof header>[K] extends { number: true } ? NumberField : StringField } // Record<keyof Mutable<ReturnType<typeof header>>, Field>;
 type Fields = { [K in keyof ReturnType<typeof fields>]: ReturnType<typeof fields>[K] extends { number: true } ? NumberField : StringField } // Record<keyof Mutable<ReturnType<typeof control>>, Field>;
